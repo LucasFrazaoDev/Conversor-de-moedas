@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <title>Conversor de moeda</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de moedas
+    </h1>
+    <p class="page-subtitle">
+      Converta entre as moedas que deseja!
+    </p>
+    <span style="font-size: 18px; color: #d0ff00;background-color: rgb(0, 0, 255);">by <b>Lucas Frazão</b></span>
+    <br><br>
+
+    <fieldset>
+      <legend>Dólar e real</legend>
+      <input type="number" id="dolar" placeholder="Dolár" />
+      <input type="number" id="real" placeholder="Real" />
+      <button type="submit" onclick="Dolar_Real()">Converter!</button>
+      <button type="submit" onclick="Clear_first()">Limpar</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Euro e real</legend>
+      <input type="number" id="euro" placeholder="Euro" />
+      <input type="number" id="real1" placeholder="Real" />
+      <button type="submit" onclick="Euro_Real()">Converter!</button>
+      <button type="submit" onclick="Clear_second()">Limpar</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dólar e euro</legend>
+      <input type="number" id="dolar1" placeholder="Dolár" />
+      <input type="number" id="euro1" placeholder="Euro" />
+      <button type="submit" onclick="Dolar_Euro()">Converter!</button>
+      <button type="submit" onclick="Clear_third()">Limpar</button>
+    </fieldset>
+
+    <fieldset>
+
+      <legend>Moedas físicas e BitCoin</legend>
+      <label for="moedas">Escolha uma moeda:</label>
+      <select name="moedas" id="moedas">
+        <option value="real2">Real</option>
+        <option value="euro2">Euro</option>
+        <option value="dolar2">Dolár</option>
+      </select>
+
+      <input type="number" id="valor_moeda" placeholder="Valor em BitCoin" />
+      <button type="submit" onclick="Conversor_BitCoin()">Converter!</button>
+      <button type="submit" onclick="Clear_forth()">Limpar</button>
+      <h3 id="retornoDoBitCoin"></h3>
+    </fieldset>
+
+  </div>
+
+  <footer>
+    <p>Cotações das moedas registradas no dia 14/03/2022</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
